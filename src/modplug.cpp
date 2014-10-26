@@ -172,6 +172,11 @@ int ModPlug_GetPlayingChannels(ModPlugFile* file)
 	return ( file->mSoundFile.m_nMixChannels < file->mSoundFile.m_nMaxMixChannels ? file->mSoundFile.m_nMixChannels : file->mSoundFile.m_nMaxMixChannels );
 }
 
+void ModPlug_SetCurrentTempo(ModPlugFile* file, int tempo)
+{
+	file->mSoundFile.m_nMusicTempo = tempo;
+}
+
 void ModPlug_SeekOrder(ModPlugFile* file,int order)
 {
 	file->mSoundFile.SetCurrentOrder(order);

@@ -126,6 +126,8 @@ MODPLUG_EXPORT int ModPlug_GetCurrentOrder(ModPlugFile* file);
 MODPLUG_EXPORT int ModPlug_GetCurrentPattern(ModPlugFile* file);
 MODPLUG_EXPORT int ModPlug_GetCurrentRow(ModPlugFile* file);
 MODPLUG_EXPORT int ModPlug_GetPlayingChannels(ModPlugFile* file);
+	
+MODPLUG_EXPORT void ModPlug_SetCurrentTempo(ModPlugFile* file, int tempo);
 
 MODPLUG_EXPORT void ModPlug_SeekOrder(ModPlugFile* file,int order);
 MODPLUG_EXPORT int ModPlug_GetModuleType(ModPlugFile* file);
